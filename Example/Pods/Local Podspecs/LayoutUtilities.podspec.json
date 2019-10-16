@@ -1,0 +1,22 @@
+{
+  "name": "LayoutUtilities",
+  "version": "0.1.0",
+  "summary": "A short description of LayoutUtilities.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/itamar.biton@climacell.co/LayoutUtilities",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "itamar.biton@climacell.co": "itamar.biton@climacell.co"
+  },
+  "source": {
+    "git": "https://github.com/itamar.biton@climacell.co/LayoutUtilities.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LayoutUtilities/Classes/**/*"
+}

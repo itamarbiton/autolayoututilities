@@ -1,0 +1,16 @@
+PODS:
+  - LayoutUtilities (0.1.0)
+
+DEPENDENCIES:
+  - LayoutUtilities (from `../`)
+
+EXTERNAL SOURCES:
+  LayoutUtilities:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LayoutUtilities: 507d76163ec824a61b5fd9c534fab3be5798f988
+
+PODFILE CHECKSUM: 1d490c5e5938d54be20287fbd1e2f061185cda35
+
+COCOAPODS: 1.5.3

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LayoutUtilities'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LayoutUtilities.'
+  s.summary          = 'A simple collection of helper methods used to ease working with AutoLayout in code.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,10 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This is nothing but a collection of simple helper methods and extensions used to make
+working with Apple's AutoLayout system a bit easier.
                        DESC
 
-  s.homepage         = 'https://github.com/itamar.biton@climacell.co/LayoutUtilities'
+  s.homepage         = 'https://www.climacell.co'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'itamar.biton@climacell.co' => 'itamar.biton@climacell.co' }
@@ -31,12 +32,14 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'LayoutUtilities/Classes/**/*'
+
+  s.swift_version = '4.2'
   
   # s.resource_bundles = {
   #   'LayoutUtilities' => ['LayoutUtilities/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
