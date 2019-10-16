@@ -1,0 +1,6 @@
+use_frameworks!
+target 'LayoutUtilities_Tests' do
+  pod 'LayoutUtilities', :path => '../'
+  
+  
+end
