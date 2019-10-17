@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.homepage                = 'https://www.climacell.co'
   s.license                 = { :type => 'MIT', :file => 'LICENSE' }
   s.author                  = { 'itamar.biton@climacell.co' => 'itamar.biton@climacell.co' }
-  s.source                  = { :git => 'https://github.com/itamar.biton@climacell.co/LayoutUtilities.git', :tag => s.version.to_s }
+  s.source                  = { :git => 'https://github.com/itamarbiton/autolayoututilities.git', :tag => s.version.to_s }
   s.ios.deployment_target   = '11.0'
   s.source_files            = 'LayoutUtilities/Classes/**/*'
   s.frameworks              = 'UIKit', 'MapKit'
