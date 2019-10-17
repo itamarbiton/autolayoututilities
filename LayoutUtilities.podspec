@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'LayoutUtilities'
-  s.version                 = '0.1.0'
+  s.version                 = '1.0.1'
   s.summary                 = 'A simple collection of helper methods used to ease working with AutoLayout in code.'
   s.homepage                = 'https://www.climacell.co'
   s.license                 = { :type => 'MIT', :file => 'LICENSE' }
