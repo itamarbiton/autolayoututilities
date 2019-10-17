@@ -1,9 +1,8 @@
 {
   "name": "LayoutUtilities",
   "version": "0.1.0",
-  "summary": "A short description of LayoutUtilities.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/itamar.biton@climacell.co/LayoutUtilities",
+  "summary": "A simple collection of helper methods used to ease working with AutoLayout in code.",
+  "homepage": "https://www.climacell.co",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -16,7 +15,14 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
-  "source_files": "LayoutUtilities/Classes/**/*"
+  "source_files": "LayoutUtilities/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "swift_versions": "4.2",
+  "description": "This is nothing but a collection of simple helper methods and extensions used to make\nworking with Apple's AutoLayout system a bit easier.",
+  "swift_version": "4.2"
 }

@@ -1,5 +1,6 @@
 import XCTest
 import LayoutUtilities
+import UIKit
 
 class Tests: XCTestCase {
     

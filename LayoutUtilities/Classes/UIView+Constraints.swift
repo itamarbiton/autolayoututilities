@@ -3,7 +3,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+public extension UIView {
     ///
     /// Uses AutoLayout to create constraints that will fill the receiver's superview, optionally using the specified padding
     ///
@@ -93,7 +93,7 @@ extension UIView {
     ///
     /// Traverses the tree of views and removes every layout constraint containig the receiver
     ///
-    public func removeAllConstraints(internalConstraints: Bool = true, useAutoresizingMask: Bool = true) {
+    func removeAllConstraints(internalConstraints: Bool = true, useAutoresizingMask: Bool = true) {
         var _superview = self.superview
 
         while let superview = _superview {
@@ -127,7 +127,7 @@ extension UIView {
     ///     A list of the optional `NSLayoutConstraint` values, representing the generated constraints
     ///
     @discardableResult
-    public func constraintToSuperview(top: Bool = false, topPadding: CGFloat = 0, left: Bool = false, leftPadding: CGFloat = 0, bottom: Bool = false, bottomPadding: CGFloat = 0, right: Bool = false, rightPadding: CGFloat = 0) -> (topConstraint: NSLayoutConstraint?, leftConstraint: NSLayoutConstraint?, bottomConstraint: NSLayoutConstraint?, rightConstraint: NSLayoutConstraint?) {
+    func constraintToSuperview(top: Bool = false, topPadding: CGFloat = 0, left: Bool = false, leftPadding: CGFloat = 0, bottom: Bool = false, bottomPadding: CGFloat = 0, right: Bool = false, rightPadding: CGFloat = 0) -> (topConstraint: NSLayoutConstraint?, leftConstraint: NSLayoutConstraint?, bottomConstraint: NSLayoutConstraint?, rightConstraint: NSLayoutConstraint?) {
         guard let superview = self.superview else {
             return (nil, nil, nil, nil)
         }
@@ -171,7 +171,7 @@ extension UIView {
     ///     A list of optional `NSLayoutConstraint` values representing the generated constraints
     ///
     @discardableResult
-    public func constraintDimensions(width: CGFloat? = nil, height: CGFloat? = nil) -> (widthConstraint: NSLayoutConstraint?, heightConstraint: NSLayoutConstraint?) {
+    func constraintDimensions(width: CGFloat? = nil, height: CGFloat? = nil) -> (widthConstraint: NSLayoutConstraint?, heightConstraint: NSLayoutConstraint?) {
         var widthConstraint: NSLayoutConstraint?
         var heightConstraint: NSLayoutConstraint?
 
@@ -189,7 +189,7 @@ extension UIView {
     }
 
     @discardableResult
-    public func constraintWrapSuperviewAround(top: Bool = false, topPadding: CGFloat = 0, trailing: Bool = false, trailingPadding: CGFloat = 0, bottom: Bool = false, bottomPadding: CGFloat = 0, leading: Bool = false, leadingPadding: CGFloat = 0) -> (top: NSLayoutConstraint?, trailiing: NSLayoutConstraint?, bottom: NSLayoutConstraint?, leading: NSLayoutConstraint?) {
+    func constraintWrapSuperviewAround(top: Bool = false, topPadding: CGFloat = 0, trailing: Bool = false, trailingPadding: CGFloat = 0, bottom: Bool = false, bottomPadding: CGFloat = 0, leading: Bool = false, leadingPadding: CGFloat = 0) -> (top: NSLayoutConstraint?, trailiing: NSLayoutConstraint?, bottom: NSLayoutConstraint?, leading: NSLayoutConstraint?) {
         guard let superview = self.superview else {
             return (nil, nil, nil, nil)
         }
@@ -223,7 +223,7 @@ extension UIView {
     }
 
     @discardableResult
-    public static func constraintVerticalSpacing(lowerView: UIView, higherView: UIView, spacing: CGFloat = 0) -> NSLayoutConstraint {
+    static func constraintVerticalSpacing(lowerView: UIView, higherView: UIView, spacing: CGFloat = 0) -> NSLayoutConstraint {
         let constraint = lowerView.topAnchor.constraint(equalTo: higherView.bottomAnchor, constant: spacing)
         constraint.isActive = true
 
@@ -231,7 +231,7 @@ extension UIView {
     }
 
     @discardableResult
-    public static func constraintHorizontalSpacing(leadingView: UIView, trailingView: UIView, spacing: CGFloat = 0) -> NSLayoutConstraint {
+    static func constraintHorizontalSpacing(leadingView: UIView, trailingView: UIView, spacing: CGFloat = 0) -> NSLayoutConstraint {
         let constraint = trailingView.leadingAnchor.constraint(equalTo: leadingView.trailingAnchor, constant: spacing)
         constraint.isActive = true
 
@@ -239,7 +239,7 @@ extension UIView {
     }
 
     @discardableResult
-    public static func constraintCenter(anchorView: UIView, viewToCenter: UIView, centerX: Bool = false, offsetX: CGFloat = 0, centerY: Bool = false, offsetY: CGFloat = 0) -> (centerXConstraint: NSLayoutConstraint?, centerYConstraint: NSLayoutConstraint?) {
+    static func constraintCenter(anchorView: UIView, viewToCenter: UIView, centerX: Bool = false, offsetX: CGFloat = 0, centerY: Bool = false, offsetY: CGFloat = 0) -> (centerXConstraint: NSLayoutConstraint?, centerYConstraint: NSLayoutConstraint?) {
         var centerXConstraint: NSLayoutConstraint?
         var centerYConstraint: NSLayoutConstraint?
 
@@ -257,7 +257,7 @@ extension UIView {
     }
 
     @discardableResult
-    public static func constraintAlign(anchorView: UIView, viewToAlign: UIView, leading: Bool = false, leadingPadding: CGFloat = 0, top: Bool = false, topPadding: CGFloat = 0, trailing: Bool = false, trailingPadding: CGFloat = 0, bottom: Bool = false, bottomPadding: CGFloat = 0) -> (leadingConstraint: NSLayoutConstraint?, topConstraint: NSLayoutConstraint?, trailingConstraint: NSLayoutConstraint?, bottomConstraint: NSLayoutConstraint?) {
+    static func constraintAlign(anchorView: UIView, viewToAlign: UIView, leading: Bool = false, leadingPadding: CGFloat = 0, top: Bool = false, topPadding: CGFloat = 0, trailing: Bool = false, trailingPadding: CGFloat = 0, bottom: Bool = false, bottomPadding: CGFloat = 0) -> (leadingConstraint: NSLayoutConstraint?, topConstraint: NSLayoutConstraint?, trailingConstraint: NSLayoutConstraint?, bottomConstraint: NSLayoutConstraint?) {
         var leadingConstraint: NSLayoutConstraint?
         var topConstraint: NSLayoutConstraint?
         var trailingConstraint: NSLayoutConstraint?

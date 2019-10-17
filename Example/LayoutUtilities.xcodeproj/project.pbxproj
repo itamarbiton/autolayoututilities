@@ -172,21 +172,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LayoutUtilities_Tests/Pods-LayoutUtilities_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LayoutUtilities_Tests/Pods-LayoutUtilities_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LayoutUtilities/LayoutUtilities.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LayoutUtilities.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LayoutUtilities_Tests/Pods-LayoutUtilities_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LayoutUtilities_Tests/Pods-LayoutUtilities_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8102A3588DA223C562FACDDF /* [CP] Check Pods Manifest.lock */ = {
